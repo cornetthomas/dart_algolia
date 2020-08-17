@@ -12,6 +12,7 @@ class AlgoliaQuerySnapshot {
     this.exhaustiveNbHits,
     this.params,
     this.query,
+    this.queryId,
   });
 
   List<AlgoliaObjectSnapshot> hits;
@@ -28,6 +29,7 @@ class AlgoliaQuerySnapshot {
   String index;
   Map<String, dynamic> facets;
   Map<String, dynamic> facetsStats;
+  String queryId;
 
   AlgoliaQuerySnapshot.fromMap(algolia, index, Map<String, dynamic> map) {
     this.algolia = algolia;
@@ -48,6 +50,7 @@ class AlgoliaQuerySnapshot {
     this.processingTimeMS = map['processingTimeMS'];
     this.exhaustiveNbHits = map['exhaustiveNbHits'];
     this.query = map['query'];
+    this.queryId = map["queryID"];
     this.params = map['params'];
     this.facets = map['facets'] != null ? map['facets'] : {};
     this.facetsStats = map['facets_stats'] != null ? map['facets_stats'] : {};
