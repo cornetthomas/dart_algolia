@@ -268,6 +268,23 @@ class AlgoliaQuery {
     return _copyWithParameters(<String, dynamic>{'facetFilters': facetFilters});
   }
 
+
+
+
+  ///
+  /// **UserToken**
+  ///
+  /// Relate a user to a search
+  ///
+  /// Documentation to be added
+  ///
+  ///
+  AlgoliaQuery setUSerToken(String value) {
+    assert(value is String
+        'value must be  String');
+    return _copyWithParameters(<String, dynamic>{'userToken': value});
+  }
+
   ///
   /// **OptionalFilters**
   ///
