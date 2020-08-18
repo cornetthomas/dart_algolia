@@ -280,7 +280,7 @@ class AlgoliaQuery {
   ///
   ///
   AlgoliaQuery setUSerToken(String value) {
-    assert(value is String
+    assert(value is String,
         'value must be  String');
     return _copyWithParameters(<String, dynamic>{'userToken': value});
   }
