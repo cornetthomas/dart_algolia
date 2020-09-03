@@ -279,7 +279,7 @@ class AlgoliaQuery {
   /// Documentation to be added
   ///
   ///
-  AlgoliaQuery setUSerToken(bool value) {
+  AlgoliaQuery setEnablePersonalization(bool value) {
     assert(value is bool,
         'value must be bool');
     return _copyWithParameters(<String, dynamic>{'enablePersonalization': value});
