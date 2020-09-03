@@ -272,6 +272,21 @@ class AlgoliaQuery {
 
 
   ///
+  /// **enablePersonalization**
+  ///
+  /// Relate a user to a search and enable personalization
+  ///
+  /// Documentation to be added
+  ///
+  ///
+  AlgoliaQuery setUSerToken(bool value) {
+    assert(value is bool,
+        'value must be bool');
+    return _copyWithParameters(<String, dynamic>{'enablePersonalization': value});
+  }
+  
+  
+  ///
   /// **UserToken**
   ///
   /// Relate a user to a search
